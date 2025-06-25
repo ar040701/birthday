@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, My Love!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="slideshow.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+      color: #333;
+      text-align: center;
+    }
+    @keyframes float {
+     0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+    }
+    .heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 24px;
+    color: #e91e63;
+    animation: float 6s ease-in infinite;
+    left: calc(50% px);
+    }
+
+    header {
+      padding: 60px 20px;
+      background: rgba(255, 255, 255, 0.2);
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: black;
+    }
+    header p {
+      font-size: 1.2em;
+      color: black;
+    }
+    .note {
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 40px auto;
+      padding: 30px;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .note h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2em;
+      color: #e91e63;
+    }
+    .note p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    footer {
+      padding: 20px;
+      font-size: 0.9em;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Happy Birthday, My Love! 🎂❤️</h1>
+    <p>Wishing you joy, laughter, and endless love today and always.</p>
+  </header>
+
+  <div class="surprise-section">
+  <button onclick="revealSurprise()" id="surprise-btn">🎁 Tap for a Surprise</button>
+  <div id="surprise-content" style="display: none;">
+    <p class="surprise-text">You are the most beautiful thing that has ever happened to me. 💖</p>
+    <img src="couple.JPG" alt="Surprise" class="surprise-image">
+  </div>
+</div>
+
+  <!-- Slideshow Section -->
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="Nisha_singh.JPG" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <img src="Nisha_singh1.jpeg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="Nisha_singh2.jpeg" alt="Slide 3">
+    </div>
+    <div class="slide">
+      <img src="Nisha_singh3.jpeg" alt="Slide 4">
+    </div>
+    <div class="slide">
+      <img src="Nisha_singh4.jpeg" alt="Slide 5">
+    </div>
+    <div class="slide">
+      <img src="Nisha_singh5.jpeg" alt="Slide 6">
+    </div>
+    <div class="slide">
+      <img src="Nisha_singh6.jpeg" alt="Slide 7">
+    </div>
+    <div class="slide">
+      <img src="Nisha_singh7.jpeg" alt="Slide 8">
+    </div>
+    <div class="slide">
+      <img src="Nisha_singh8.jpeg" alt="Slide 9">
+    </div>
+    <!-- Add more slides as needed -->
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+    <a class="next" onclick="changeSlide(1)">❯</a>
+  </div>
+  <div class="dot-container">
+    <span class="dot" onclick="setSlide(1)"></span>
+    <span class="dot" onclick="setSlide(2)"></span>
+    <span class="dot" onclick="setSlide(3)"></span>
+    <span class="dot" onclick="setSlide(4)"></span>
+    <span class="dot" onclick="setSlide(5)"></span>
+    <span class="dot" onclick="setSlide(6)"></span>
+    <span class="dot" onclick="setSlide(7)"></span>
+    <span class="dot" onclick="setSlide(8)"></span>
+    <span class="dot" onclick="setSlide(9)"></span>
+  </div>
+
+  <section class="note">
+    <h2>A Little Note for You 💌</h2>
+    <p>
+      My dearest Nisha,<br><br>
+      Every moment with you is a blessing. You light up my world in ways I never imagined. Today is all about you, and I hope you feel as loved and special as you truly are. Thank you for being my best friend, my partner, and the love of my life.<br><br>
+      Happy Birthday, sweetheart! 💖<br>
+      Love always,<br>
+      Ayush 💕
+    </p>
+  </section>
+
+  <footer>
+    Made with 💖 by Ayush Raj | #ForeverYours
+  </footer>
+
+  <script src="slideshow.js"></script>
+</body>
+</html>
