@@ -71,11 +71,60 @@
     <p>Wishing you joy, laughter, and endless love today and always.</p>
   </header>
 
-  <div class="surprise-section">
+  <div id="quiz-container">
+  <h2>💘 How Well Do You Know *Us*?</h2>
+  <form id="quiz-form">
+    <div class="question">
+      <p>1. You will not fight with me ever?</p>
+      <label><input type="radio" name="q1" value="b"> Yes</label><br>
+      <label><input type="radio" name="q1" value="a"> Always Yes</label><br>
+      <label><input type="radio" name="q1" value="c"> No </label><br>
+    </div>
+
+    <div class="question">
+      <p>2. Apart from me everyone will your brother?</p>
+      <label><input type="radio" name="q2" value="a"> Yes</label><br>
+      <label><input type="radio" name="q2" value="b"> No</label><br>
+      <label><input type="radio" name="q2" value="c"> labubu : </label><br>
+    </div>
+
+    <div class="question">
+      <p>3. In what dress do I love you most</p>
+      <label><input type="radio" name="q3" value="c"> Pink half kurti</label><br>
+      <label><input type="radio" name="q3" value="b"> Red Saree</label><br>
+      <label><input type="radio" name="q3" value="a"> No dress - Naked :</label><br>
+    </div>
+
+    <div class="question">
+      <p>4. Will you stay with me always?</p>
+      <label><input type="radio" name="q4" value="a"> Yes</label><br>
+      <label><input type="radio" name="q4" value="b"> No</label><br>
+      <label><input type="radio" name="q4" value="c"> Sucide</label><br>
+    </div>
+
+    <button type="submit">Check My Score 💞</button>
+  </form>
+
+  <div id="quiz-result" style="display:none;"></div>
+</div>
+  <!-- <div class="surprise-section">
   <button onclick="revealSurprise()" id="surprise-btn">🎁 Tap for a Surprise</button>
   <div id="surprise-content" style="display: none;">
     <p class="surprise-text">You are the most beautiful thing that has ever happened to me. 💖</p>
     <img src="couple.JPG" alt="Surprise" class="surprise-image">
+  </div>
+</div> -->
+
+  <div class="surprise-section">
+  <button onclick="revealSurprise()" id="surprise-btn">🎁 Tap for a Surprise</button>
+
+  <div id="surprise-content" style="display: none;">
+    <p class="surprise-text">Here’s a walk through our sweetest memories 💕</p>
+
+    <video controls id="memory-video" class="surprise-video">
+      <source src="love.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 </div>
 

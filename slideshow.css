@@ -34,18 +34,12 @@
   background-color: #d81b60;
 }
 
-.surprise-text {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.8em;
-  color: #ff4081;
-  margin-top: 20px;
-}
-
-.surprise-image {
-  max-width: 80%;
+.surprise-video {
+  width: 90%;
+  max-width: 640px;
   margin-top: 20px;
   border-radius: 16px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
 .prev, .next {
